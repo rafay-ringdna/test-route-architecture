@@ -4,8 +4,9 @@ import {Link} from 'react-router-dom'
 export default function Link2() {
 
   return (
-    <Link to="/link1">
+    <div>
       <h1>Link 2</h1>
-    </Link>
+      <Link to="/link1">link1</Link>
+    </div>
   )
 }

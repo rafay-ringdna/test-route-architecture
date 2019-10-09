@@ -1,16 +1,16 @@
 import React from 'react'
 import {Switch, Route, Link} from 'react-router-dom'
-import Link1 from './Link1';
+import Link2 from './Link2';
 
-export default function LinkRoute() {
+export default function LinkRoute({match}) {
 
   return (
     <div>
       <Switch>
-        <Route path="/link1" component={Link1}/>
+        <Route path={`${match.path}/link2`} component={Link2}/>
       </Switch>
 
-      <Link to="/link2">test-btn</Link>
+      <Link to={`${match.path}/link2`}>test-btn</Link>
     </div>
   )
 }
